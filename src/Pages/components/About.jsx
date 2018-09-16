@@ -1,13 +1,13 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import Page from "./Page";
-import PageHeader from "./PageHeader";
+import Page from "../../Page";
+import { PageHeader } from "react-bootstrap";
 import {
   reactCreateAppLink,
   reactBootstrapLink,
   reactRouterLink,
   myGithubLink
-} from "./constants";
+} from "../../constants";
 
 export default class About extends PureComponent {
   createListItemLink = (linkText, link) => (
@@ -18,7 +18,7 @@ export default class About extends PureComponent {
     return (
       <Page>
         <div>
-          <PageHeader headerText="About" />
+          <PageHeader>About</PageHeader>
           <h2>What is this website?</h2>
           {
             "The purpose of this website is to give a comprehensive view into what my technical skills are.  The website itself doubles as a demostration of my front end development skills."

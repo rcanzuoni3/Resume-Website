@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
-import Page from './Page';
-import PageHeader from './PageHeader'
+import Page from '../../Page';
 import PropTypes from 'prop-types';
+import {PageHeader} from "react-bootstrap";
 
 export default class ContactMe extends Component {
     render() {
         return (
             <Page>
                 <div>
-                    <PageHeader headerText="Contact Me"/>
+                    <PageHeader>
+                        Contact Me
+                    </PageHeader>
                     <div>
                         Phone: {this.props.phoneNumber}
                     </div>

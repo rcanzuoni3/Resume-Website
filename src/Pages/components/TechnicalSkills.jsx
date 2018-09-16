@@ -1,12 +1,14 @@
 import React, {PureComponent} from 'react';
-import Page from './Page';
-import PageHeader from './PageHeader';
+import Page from '../../Page';
+import {PageHeader} from "react-bootstrap";
 
 export default class TechnicalSkills extends PureComponent {
     render() {
         return (
             <Page>
-                <PageHeader headerText="Technical Skills"/>
+                <PageHeader>
+                    Technical Skills
+                </PageHeader>
                 <h2>Front End</h2>
                 <ul>
                     <li>Javascript</li>
@@ -22,7 +24,7 @@ export default class TechnicalSkills extends PureComponent {
                     <li>RESTful APIs</li>
                     <li>SOAP/WFC</li>
                 </ul>
-                <h2>Other</h2>
+                <h2>Other Relevant Skills</h2>
                 <ul>
                     <li></li>
                 </ul>
